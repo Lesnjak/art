@@ -11,6 +11,7 @@
             asNavFor: '.small',
             autoplay: true,
             autoplaySpeed: 4000,
+            pauseOnFocus: false,
 
             responsive: [{
                 breakpoint: 1200,
@@ -24,13 +25,13 @@
             }]
         });
         var slideToSow = 6;
-        if ($(document).height() < 860) {
+        if ($('header').height() < 860) {
             slideToSow = 5;
         }
-        if ($(document).height() < 740) {
+        if ($('header').height() < 740) {
             slideToSow = 4;
         }
-        if ($(document).height() < 640) {
+        if ($('header').height() < 640) {
             slideToSow = 3;
         }
 
@@ -39,12 +40,11 @@
             slidesToScroll: true,
             asNavFor: '.big',
             dots: false,
-            infinite: true,
-            focusOnSelect: true,
             prevArrow: '<span class="next"></span>',
             nextArrow: '<span class="prev"></span>',
             arrows: true,
             vertical: true,
+            focusOnSelect: true,
             responsive: [{
                 breakpoint: 1200,
                 settings: {

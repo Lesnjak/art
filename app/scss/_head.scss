@@ -4,6 +4,14 @@ header{
   position: relative;
   &:before{
     transition: 0.5s;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    z-index: 1;
   }
 }
 .slider {
@@ -12,6 +20,7 @@ header{
   height: 100vh;
   min-height: 665px;
   transition: 0.5s;
+
   &:before{
     position: absolute;
     content: "";
@@ -30,6 +39,7 @@ header{
    height: 100vh;
    min-height: 665px;
    font-size: 0;
+   z-index: 0;
     .big {
 
        .sli {
@@ -61,7 +71,7 @@ header{
   top: 50%;
   height: auto;
   width:204px;
-
+z-index: 2;
   transform: translateY(-50%);
 
   .small {
@@ -103,21 +113,24 @@ header{
   justify-content: space-between;
   text-align: center;
   transition: 0.5s;
+  z-index: 3;
   li{
     min-width: 270px;
     padding: 22px 0;
     border-bottom: 1px solid #313131 ;
     list-style: none;
     a{
-      color: #ffffff;
+      color: #fff;
       font-family: Candara;
       font-size: 18px;
       line-height: 28.8px;
       text-transform: uppercase;
       transition: 0.3s;
       display: block;
+      font-weight: 500;
       &:hover{
-        font-weight: 600;
+        color: #fff;
+        font-weight: 700;
 
       }
 
@@ -155,6 +168,7 @@ header{
   background-color: rgba(0,0,0,0.45);
   border-radius: 10px;
   overflow: hidden;
+  z-index: 2;
   .logo-box{
     text-align: center;
     padding: 40px 15px;
@@ -264,15 +278,9 @@ header{
   .header-after{
     position: relative;
     &:before{
-      position: absolute;
-      content: "";
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
       background-color: rgba(0,0,0,0.5);
-      z-index: 1;
       animation: op 0.5s;
+      z-index: 3;
     }
   }
   .wrapper-menu{
@@ -281,7 +289,6 @@ header{
 .menu-box{
   width: 300px;
   left:-300px;
-  z-index: 2;
   padding: 35px 0;
 }
   .sl-l{
