@@ -23,7 +23,7 @@
 </head>
 <body>
 
-<header>
+<header id="header">
     <div class="slider">
         <div class="slider-big" >
             <div class="big">
@@ -50,12 +50,12 @@
         <div class="menu-box">
              <h2>меню</h2>
             <ul>
-            <li class="li"><a href="#">услуги</a></li>
-            <li class="li"><a href="#">преимущества</a></li>
-            <li class="li"><a href="#">схема нашей работы</a></li>
-            <li class="li"><a href="#">видеоотзывы</a></li>
-            <li class="li"><a href="#">наша статистика</a></li>
-            <li class="li"><a href="#">О нас</a></li>
+            <li class="li"><a href="#service">услуги</a></li>
+            <li class="li"><a href="#advantages">преимущества</a></li>
+            <li class="li"><a href="#scheme">схема нашей работы</a></li>
+            <li class="li"><a href="#video-voices">видеоотзывы</a></li>
+            <li class="li"><a href="#statistic">наша статистика</a></li>
+            <li class="li"><a href="#about">О нас</a></li>
             </ul>
             <div class="social">
                 <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -73,8 +73,8 @@
                 <a href="tel:+380930318753"><img src="img/phone.png" alt=""> +380930318753</a>
             </div>
             <div class="button-box">
-                <a class="button" href="#"> <span></span>Смотреть видео</a>
-                <a class="button button-white" href="#"> Оставить заявку</a>
+                <a class="button" href="#" data-video> <span></span>Смотреть видео</a>
+                <a class="button button-white" href="#" data-form> Оставить заявку</a>
             </div>
         </div>
         <div class="wrapper-menu">
@@ -84,7 +84,7 @@
         </div>
     </div>
 </header>
-<section class="service">
+<section class="service" id="service">
     <h3>Услуги</h3>
     <div class="container">
         <div class="row">
@@ -98,7 +98,7 @@
             <div class="text-center">
             <div class="item-box">
             <div class="item" >
-                <div class="item-inner-box" style="background-image: url(img/serv1.png);">
+                <div class="item-inner-box" data-photo style="background-image: url(img/serv1.png);" >
                     <div class="item-inner" >
                         <div class="top-box"><img src="img/zoom.png" alt="image"></div>
                         <div class="bottom-box">
@@ -110,7 +110,7 @@
                 </div>
             </div>
                 <div class="item" >
-                    <div class="item-inner-box" style="background-image: url(img/serv2.png);">
+                    <div class="item-inner-box" data-photo style="background-image: url(img/serv2.png);">
                         <div class="item-inner" >
                             <div class="top-box"><img src="img/zoom.png" alt="image"></div>
                             <div class="bottom-box">
@@ -122,7 +122,7 @@
                     </div>
                 </div>
                 <div class="item" >
-                    <div class="item-inner-box" style="background-image: url(img/serv3.png);">
+                    <div class="item-inner-box" data-photo style="background-image: url(img/serv3.png);">
                         <div class="item-inner" >
                             <div class="top-box"><img src="img/zoom.png" alt="image"></div>
                             <div class="bottom-box">
@@ -134,7 +134,7 @@
                     </div>
                 </div>
                 <div class="item" >
-                    <div class="item-inner-box" style="background-image: url(img/serv4.png);">
+                    <div class="item-inner-box" data-photo style="background-image: url(img/serv4.png);">
                         <div class="item-inner" >
                             <div class="top-box"><img src="img/zoom.png" alt="image"></div>
                             <div class="bottom-box">
@@ -146,7 +146,7 @@
                     </div>
                 </div>
                 <div class="item" >
-                    <div class="item-inner-box" style="background-image: url(img/serv5.png);">
+                    <div class="item-inner-box" data-photo  style="background-image: url(img/serv5.png);">
                         <div class="item-inner" >
                             <div class="top-box"><img src="img/zoom.png" alt="image"></div>
                             <div class="bottom-box">
@@ -158,7 +158,7 @@
                     </div>
                 </div>
                 <div class="item" >
-                    <div class="item-inner-box" style="background-image: url(img/serv6.png);">
+                    <div class="item-inner-box" data-photo style="background-image: url(img/serv6.png);">
                         <div class="item-inner" >
                             <div class="top-box"><img src="img/zoom.png" alt="image"></div>
                             <div class="bottom-box">
@@ -177,7 +177,7 @@
         </div>
     </div>
 </section>
-<section class="advantages">
+<section class="advantages" id="advantages">
     <h3>преимущества</h3>
     <div class="container">
         <div class="row">
@@ -224,7 +224,7 @@
         </div>
     </div>
 </section>
-<section class="scheme" style="background-image: url(img/shemebg.png);">
+<section class="scheme" id="scheme" style="background-image: url(img/shemebg.png);">
     <h3>схема нашей работы</h3>
     <div class="container">
         <div class="row">
@@ -274,6 +274,308 @@
         </div>
     </div>
 </section>
+<section class="video-voices" id="video-voices">
+    <h3>Видеоотзывы</h3>
+    <div class="container">
+        <div class="row">
+    <div class="video-slider">
+        <div>
+            <div class="video-box">
+                <div class="item">
+                    <div class="item-inner-box" style="background-image: url(img/face1.png);">
+                        <img src="img/videobutton.png" alt="image">
+                        <div class="item-inner">
+                            <div class="top-box"></div>
+                        </div>
+                    </div>
+                </div>
+                <h5>Кристина</h5>
+                <h6>дизайнер</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+        </div>
+        <div>
+            <div class="video-box">
+                <div class="item">
+                    <div class="item-inner-box" style="background-image: url(img/face2.png);">
+                        <img src="img/videobutton.png" alt="image">
+                        <div class="item-inner">
+                            <div class="top-box"></div>
+                        </div>
+                    </div>
+                </div>
+                <h5>Денис</h5>
+                <h6>владелец антикафе</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+        </div>
+        <div>
+            <div class="video-box">
+                <div class="item">
+                    <div class="item-inner-box" style="background-image: url(img/face3.png);">
+                        <img src="img/videobutton.png" alt="image">
+                        <div class="item-inner">
+                            <div class="top-box"></div>
+                        </div>
+                    </div>
+                </div>
+                <h5>Дмитрий</h5>
+                <h6>клиент PicArt</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                   </p>
+            </div>
+        </div>
+        <div>
+            <div class="video-box">
+                <div class="item">
+                    <div class="item-inner-box" style="background-image: url(img/face1.png);">
+                        <img src="img/videobutton.png" alt="image">
+                        <div class="item-inner">
+                            <div class="top-box"></div>
+                        </div>
+                    </div>
+                </div>
+                <h5>Кристина</h5>
+                <h6>дизайнер</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<section class="statistic"  id="statistic" style="background-image: url(img/stat-bg.png);">
+    <h3>за 10 лет нам доверили оформить</h3>
+    <div class="container">
+        <div class="row">
+            <div class="stat-box">
+                <div class="stat">
+                    <div class="circle-stat">
+                        1500
+                    </div>
+                    <div class="stat-in">
+                        м²
+                    </div>
+                </div>
+                <div class="stat">
+                    <div class="circle-stat">
+                        500
+                    </div>
+                    <div class="stat-in">
+                        заказов
+                    </div>
+                </div>
+                <div class="stat">
+                    <div class="circle-stat">
+                        40
+                    </div>
+                    <div class="stat-in">
+                        квартир
+                    </div>
+                </div>
+                <div class="stat">
+                    <div class="circle-stat">
+                        15
+                    </div>
+                    <div class="stat-in">
+                        домов
+                    </div>
+                </div>
+                <div class="stat">
+                    <div class="circle-stat">
+                        1
+                    </div>
+                    <div class="stat-in">
+                        храм
+                    </div>
+                </div>
+                <div class="stat">
+                    <div class="circle-stat">
+                        15
+                    </div>
+                    <div class="stat-in">
+                        заведений
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="about" id="about" >
+    <h3>Видеоотзывы</h3>
+    <div class="container">
+        <div class="row">
+            <div class="text-box-about">
+                <h6>Picart – художественная мастерская специалистов в различных сферах изобразительного
+                    искусства и дизайна</h6>
+                <p>Мы предлагаем широкий спектр услуг художественного оформления для
+                    Вашего интерьера: роспись стен, барельефы, роспись лепного декора,
+                    декор элементов мебели, художественные картины – все это подчеркнет
+                    индивидуальность и изысканность дизайна Вашего интерьера, поможет
+                    придать неповторимый колорит квартире или офису, сделать загородный
+                    дом более комфортным и теплым, и преобразит Ваш мир красотой искусства.
+                    А также для тех, кто хочет преподнести великолепный подарок в виде
+                    картины родному человеку, руководителю или коллегам по работе,
+                    запечатлеть на долгую память мгновения жизни. Наши профессиональные
+                    художники виртуозно владеют любой техникой и стилем, индивидуально
+                    работая с каждым клиентом, помогут воплотить желания и фантазии в
+                    реальность и преобразить Ваш мир красотой искусства!</p>
+
+            </div>
+            <div class="about-img"><img src="img/about-bg.png" alt=""></div>
+        </div>
+    </div>
+
+</section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="footer-box">
+                <div class="logo mb"><img src="img/logo2.png" alt="logo"></div>
+                <div class="tel-box mb">
+                    <p>свяжитесь с нами:</p>
+                    <a href="tel:+380930318753"><img src="img/phone.png" alt=""> +380930318753</a>
+                </div>
+                <div class="soc mb">
+                    <p>мы в соц. сетях:</p>
+                    <div class="social">
+                        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="adress mb">
+                    <p>наш адрес:</p>
+                    <span>Киев, ул. Краковская, 59, офис 12</span>
+                </div>
+                <a href="#header" class="but-top mb"><img src="img/but-to-top.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="white-line">
+    <div class="container">
+        <div class="row">
+            <div class="l-box">
+                <a href="https://bastard.studio">Разработано Bastard Studio © 2018</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup-images sahara" >
+    <div class="container">
+        <div class="row">
+            <div class="dsr">
+                <div class="slider-big" >
+                    <div class="crest"><img src="img/crb.png" alt=""></div>
+                    <div class="big1">
+                        <div><div class="sli"><img src="img/sahara/sl1.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl2.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl3.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl4.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl5.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl6.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl7.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl8.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl9.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl10.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl11.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl12.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl13.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl14.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl15.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl16.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl17.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl18.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl19.jpg" alt="image"></div></div>
+
+                    </div>
+                </div>
+                <div class="slider-small" >
+                    <div class="small1">
+                        <div><div class="sli"><img src="img/sahara/sl1.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl2.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl3.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl4.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl5.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl6.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl7.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl8.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl9.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl10.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl11.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl12.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl13.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl14.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl15.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl16.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl17.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl18.jpg" alt="image"></div></div>
+                        <div><div class="sli"><img src="img/sahara/sl19.jpg" alt="image"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="thank-you thank-you-finish">
+    <div class="dark">
+        <div class="thank-you-window">
+            <div class="button-crest">
+                <img src="img/icon.png" alt="image">
+            </div>
+            <div class="inner-pop">
+                Благодарим за обращение!
+                Мы скоро с Вами свяжемся.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="thank-you thank-you-video">
+    <div class="dark">
+        <div class="thank-you-window">
+            <div class="button-crest">
+                <img src="img/icon.png" alt="image">
+            </div>
+            <div class="inner-pop-video">
+                <iframe
+                        src="https://www.youtube.com/embed/mUYf2yu78Ts"
+                        frameborder="0" allow="autoplay; encrypted-media"
+                        allowfullscreen>
+
+                </iframe>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="thank-you thank-you-form">
+        <div class="thank-you-window">
+            <div class="button-crest">
+                <img src="img/icon.png" alt="image">
+            </div>
+            <h6>Оформление заявки</h6>
+            <form action="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                    <input type="text" name="name" placeholder="Ваше имя">
+                    <input type="text" name="phone" placeholder="+38 (___) ___-__-__">
+                    <input type="text" name="mail" placeholder="E-mail">
+                    <textarea name="text" placeholder="Текст Вашего сообщения"></textarea>
+                    <input type="submit" class="button button-black chef-b" value="Оставить заявку">
+
+            </form>
+        </div>
+</div>
 <script src="libs/jquery/jquery.js"></script>
 <!--<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>-->
 <!--<script src="libs/mmenu/mmenu.js"></script>-->
