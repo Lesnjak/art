@@ -43,11 +43,26 @@
   }
 }
 .item-box{
-  display: inline-block;
+  display: none;
   margin-left: -20px;
   margin-right: -20px;
 
 
+
+}
+.active-box{
+  display: inline-block;
+  .item{
+ animation: zoom5 0.5s;
+  }
+}
+@keyframes zoom5 {
+  0%{
+    transform: scale(0.8);
+  }
+  100%{
+    transform: scale(1);
+  }
 }
 .item{
   display: inline-block;

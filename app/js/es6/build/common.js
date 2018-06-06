@@ -2,6 +2,17 @@
 'use strict';
 
 $('document').ready(function () {
+    var $set = $('.tabs-box a');
+$(".tabs-box a").click(function () {
+    $(".tabs-box a").removeClass("active-tab");
+    $(this).addClass("active-tab");
+    var n=$set.index(this);
+    $(".text-center .item-box").removeClass("active-box");
+$(".text-center .item-box").eq(n).addClass("active-box");
+    return false
+});
+
+
     ///////////////////////////////////////////////////////////////////////////////////////////////////
     $('.big').slick({
         slidesToShow: 1,
@@ -218,6 +229,9 @@ if($('header').height()< 640){
         $('.thank-you-form').show();
     });
     $('[data-video]').click(function () {
+        var res = $(this).attr('data-video');
+        $("iframe").attr('src', "");
+        $("iframe").attr('src', res);
         $('.thank-you-video').show();
     });
     $('.crest').click(function () {

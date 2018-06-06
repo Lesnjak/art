@@ -663,9 +663,42 @@ header:before {
 }
 
 .item-box {
-  display: inline-block;
+  display: none;
   margin-left: -20px;
   margin-right: -20px;
+}
+
+.active-box {
+  display: inline-block;
+}
+
+.active-box .item {
+  -webkit-animation: zoom5 0.5s;
+  animation: zoom5 0.5s;
+}
+
+@-webkit-keyframes zoom5 {
+  0% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes zoom5 {
+  0% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 
 .item {
