@@ -51,6 +51,7 @@ header{
           -webkit-background-size: cover;
           background-size: cover;
           background-position: center;
+
          &:before{
            top: 0;
            left: 0;
@@ -275,7 +276,16 @@ z-index: 2;
     border-top: 1px solid #adaaaa;
   }
 }
+@media (max-width: 1400px) {
+  header{
+    .slider{
+      min-height: 600px;
+      height: 600px;
+    }
+  }
+}
 @media (max-width: 1200px) {
+
   .header-after{
     position: relative;
     &:before{

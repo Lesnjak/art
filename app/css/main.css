@@ -1417,6 +1417,8 @@ footer .footer-box .but-top img {
 
 .next2 {
   background-image: url(../img/nx.png);
+  background-repeat: no-repeat;
+  background-position: center;
   width: 24px;
   height: 44px;
   position: absolute;
@@ -1436,6 +1438,8 @@ footer .footer-box .but-top img {
 
 .prev2 {
   background-image: url(../img/pr.png);
+  background-repeat: no-repeat;
+  background-position: center;
   width: 22px;
   height: 45px;
   position: absolute;
@@ -1641,6 +1645,11 @@ footer .footer-box .but-top img {
     border-top: 1px solid #adaaaa;
   }
 
+  header .slider {
+    min-height: 600px;
+    height: 600px;
+  }
+
   .next1 {
     right: 30px;
   }
@@ -1651,12 +1660,12 @@ footer .footer-box .but-top img {
 
   .popup-images .slider-big {
     position: relative;
-    width: 60%;
+    width: 80%;
   }
 
   .popup-images .slider-small {
     position: relative;
-    width: 60%;
+    width: 80%;
   }
 
   .popup-images .slider-big .crest {
@@ -1962,11 +1971,11 @@ footer .footer-box .but-top img {
 @media screen and (max-height: 460px) {
   .popup-images .slider-big {
     position: relative;
-    width: 50%;
+    width: 80%;
   }
 
   .popup-images .slider-small {
     position: relative;
-    width: 50%;
+    width: 80%;
   }
 }

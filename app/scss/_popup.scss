@@ -84,6 +84,8 @@
 
 .next2{
   background-image: url(../img/nx.png);
+  background-repeat: no-repeat;
+  background-position: center;
   width: 24px;
   height: 44px;
   position: absolute;
@@ -99,6 +101,8 @@
 }
 .prev2{
   background-image: url(../img/pr.png);
+  background-repeat: no-repeat;
+  background-position: center;
   width: 22px;
   height: 45px;
   position: absolute;
@@ -116,11 +120,11 @@
 @media (max-width: 1400px) {
   .popup-images .slider-big {
     position: relative;
-    width: 60%;
+    width: 80%;
   }
   .popup-images .slider-small {
     position: relative;
-    width: 60%;
+    width: 80%;
   }
   .popup-images .slider-big .crest {
     z-index: 150;
@@ -171,11 +175,11 @@
 @media screen and (max-height: 460px) {
   .popup-images .slider-big {
     position: relative;
-    width: 50%;
+    width:80%;
   }
   .popup-images .slider-small {
     position: relative;
-    width: 50%;
+    width: 80%;
   }
 }
 
